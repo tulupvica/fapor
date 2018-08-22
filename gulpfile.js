@@ -81,7 +81,8 @@ gulp.task('js', function() {
 
 gulp.task('js-libs', function() {
     return gulp.src(['./node_modules/jquery/dist/jquery.js',
-                    './node_modules/slick-carousel/slick/slick.js'])
+                    './node_modules/slick-carousel/slick/slick.js',
+                    './js/jquery.validate.min.js'])
         .pipe(gp.sourcemaps.init())
         .pipe(gp.concat('libs.min.js'))
         .pipe(gp.uglifyjs())
