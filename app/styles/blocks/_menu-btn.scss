@@ -37,19 +37,16 @@
 
   .menu-btn__line {
     background: #fff;
+    height: 0;
   }
 
   .menu-btn__line:before {
-    transform: rotate(-35deg);
-    width: 14px;
-    transform-origin: left bottom;
+    transform: rotate(45deg);
     background: #fff;
   }
 
   .menu-btn__line:after {
-    transform: rotate(35deg);
-    width: 14px;
-    transform-origin: left top;
+    transform: rotate(-45deg);
     background: #fff;
   }
 }

@@ -73,7 +73,7 @@ gulp.task('css-libs', function() {
 });
 
 gulp.task('js', function() {
-    return gulp.src('./app/js/main.js')
+    return gulp.src('./app/js/*js')
         .pipe(gp.uglifyjs())
         .pipe(gp.rename({suffix: '.min'}))
         .pipe(gulp.dest('./dist/js'));
@@ -81,8 +81,7 @@ gulp.task('js', function() {
 
 gulp.task('js-libs', function() {
     return gulp.src(['./node_modules/jquery/dist/jquery.js',
-                    './node_modules/slick-carousel/slick/slick.js',
-                    './js/jquery.validate.min.js'])
+                    './node_modules/slick-carousel/slick/slick.js'])
         .pipe(gp.sourcemaps.init())
         .pipe(gp.concat('libs.min.js'))
         .pipe(gp.uglifyjs())
