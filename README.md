@@ -4,7 +4,7 @@
 
   1. HTML5
   2. SASS preprocessor
-  3. JS
+  3. JS(jQuery)
 
 ## Bundling
 
