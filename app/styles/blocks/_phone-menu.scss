@@ -1,0 +1,43 @@
+.phone-menu {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 60%;
+  height: 100vh;
+  @extend %center;
+  background: rgba(36,40,47,.96);
+  z-index: 20;
+  transition: .3s;
+  transform: translateX(100%);
+}
+
+.phone-menu__active {
+  transform: translateX(0%);
+}
+
+.menu__list {
+  padding: 60px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 50%;
+}
+
+.menu__item {
+  width: 100%;
+}
+
+.menu__link {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 15px;
+  color: #fff;
+  padding: 15px 0;
+  transition: .3s;
+  &:hover {color: $btn_color;}
+  font-family: $font-family;
+  font-weight: 600;
+  text-transform: uppercase;
+}

@@ -1,0 +1,154 @@
+.management{
+
+  padding: 160px 0 52px 0;
+
+  @media (max-width: 768px) {
+    padding: 60px 0 52px 0;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 42px;
+
+    @media (max-width: 768px){
+      margin-top: -14px;
+    }
+
+  }
+
+  &__item {
+    text-align: center;
+    max-width: 30%;
+
+    @media (max-width: 768px){
+      max-width: 47%;
+      margin: 14px 0;
+    }
+
+    @media (max-width: 576px){
+      max-width: 90%;
+      margin: 14px auto;
+    }
+
+    .img-wrap {
+      max-width: 311px;
+      margin-bottom: 23px;
+
+      img {
+        width: 100%;
+
+      }
+    }
+
+  }
+
+  &__footer {
+    padding: 0 12px;
+    display: flex;
+    justify-content: space-between
+  }
+
+  .human {
+    text-align: left;
+
+    &__name {
+      margin: 0 0 2px 0 ;
+      color: $head_color;
+      font-family: $header-font-family;
+      font-size: 16px;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+
+    &__profesion {
+      margin: 0;
+      color: #b5a263;
+      font-family: $font-family;
+      font-size: 14px;
+      font-weight: 400;
+    }
+
+  }
+
+}
+
+.testimonials {
+
+  padding: 100px 0 113px;
+
+  @media (max-width: 768px) {
+    padding: 60px 0 52px 0;
+  }
+
+  &__title {
+    margin-bottom: 64px;
+
+    @media (max-width: 768px) {
+      margin-bottom: 26px;
+    }
+  }
+
+  &__slide {
+    text-align: center;
+  }
+
+  .photo {
+    margin-bottom: 32px;
+
+    &__img {
+      margin: 0 auto;
+      width: 90px;
+      height: 90px;
+    }
+  }
+
+  .comment {
+    max-width: 78%;
+    margin: 0 auto 40px;
+    color: $font-color;
+    font-family: $font-family;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0.7px;
+  }
+
+  .name {
+    margin: 0 0 10px 0 ;
+    color: $head_color;
+    font-family: $header-font-family;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  .profesion {
+    margin: 0;
+    color: #b5a263;
+    font-family: $font-family;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  .slick-arrow {
+    position: absolute;
+    top: 22%;
+    font-size: 25px;
+    color: #24282f;
+  }
+
+  .slick-prev {
+    left: -12px;
+    z-index: 30;
+  }
+
+  .slick-next {
+    right: -25px;
+  }
+
+}
+
+
+

@@ -1,0 +1,28 @@
+header.header-wrap
+    .big-container
+        .header
+            div.logo
+                a.logo__link(href='index.html')
+                    img.logo__img(src='img/logo.png')
+            nav.nav.header__nav
+                ul.nav__list
+                    +nav('Home', '#','')
+                    +nav('About', '#','active')
+                    +nav('Service', '#','')
+                    +nav('Portfolio', '#','')
+                    +nav('Contact', '#','')
+            a(href='#').menu-btn
+                span.menu-btn__line
+            .phone-menu
+                nav.menu__list
+                    li.menu__item
+                        a(href='#').menu__link Home
+                    li.menu__item
+                        a(href='#').menu__link About
+                    li.menu__item
+                        a(href='#').menu__link Service
+                    li.menu__item
+                        a(href='#').menu__link Portfolio
+                    li.menu__item
+                        a(href='#').menu__link Contact
+                    li.menu__item

@@ -1,0 +1,42 @@
+.hero {
+  background: url("../../img/hero-bg.jpg") no-repeat center top;
+  background-size: cover;
+  min-height: 284px;
+  position: relative;
+
+  @media (max-width: 576px)  {
+    min-height: 220px;
+  }
+
+  &:before {
+    @extend %pseudo;
+    @extend %stretch;
+    background: rgba(36, 40, 47, 0.96);
+  }
+
+  &__content {
+    position: absolute;
+    top: 29%;
+    color: #fff;
+
+  }
+
+  &__head {
+    margin: 0;
+    padding-left: 15px;
+    font-family: $header-font-family;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 55px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    @media (max-width: 576px)  {
+      font-size: 36px;
+    }
+
+    @media (max-width: 414px)  {
+      font-size: 26px;
+    }
+  }
+}

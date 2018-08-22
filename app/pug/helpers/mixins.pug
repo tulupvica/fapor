@@ -1,0 +1,8 @@
+mixin nav (item, link, class_name)
+    li.nav__item(class= class_name)
+        a.nav__link(href= link)= item
+
+mixin socials (link, class2)
+    a.socials__link(href= link)
+        i(class='socials__icon', class= class2)
+

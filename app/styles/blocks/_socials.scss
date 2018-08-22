@@ -1,0 +1,25 @@
+.socials {
+  align-self: center;
+  display: flex;
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    @include margin-right(10px);
+    background: #dedede;
+    border-radius: 50%;
+    transition: .5s;
+
+    &:hover {
+      background: $btn_color;
+    }
+  }
+
+  &__icon {
+    font-size: 16px;
+    color: #fff;
+  }
+}

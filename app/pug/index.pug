@@ -1,0 +1,65 @@
+extends templates/template
+
+block title
+    - var pageTitle = 'Test'
+
+block main
+    section.hero
+        .big-container
+            .hero__content
+                h1.hero__head More About US
+    section.management
+        .container
+            h2.title Management
+            .management__list.management__slider
+                .management__item.management__slide
+                    .img-wrap
+                        img(src='img/img-1.jpg' alt='img')
+                    .management__footer
+                        .human
+                            h3.human__name Courteney Cox
+                            h4.human__profesion Marketing Manager
+                        .socials
+                            +socials('#','icon-facebook','social-icon')
+                            +socials('#','icon-twitter','social-icon')
+                            +socials('#','icon-gplus','social-icon')
+                .management__item.management__slide
+                        .img-wrap
+                            img(src='img/img-2.jpg' alt='img')
+                        .management__footer
+                            .human
+                                h3.human__name Matt LeBlanc
+                                h4.human__profesion Finance Manager
+                            .socials
+                                +socials('#','icon-facebook','social-icon')
+                                +socials('#','icon-twitter','social-icon')
+                                +socials('#','icon-gplus','social-icon')
+                .management__item.management__slide
+                    .img-wrap
+                        img(src='img/img-3.jpg' alt='img')
+                    .management__footer
+                        .human
+                            h3.human__name David Schwimmer
+                            h4.human__profesion Creative Director
+                        .socials
+                            +socials('#','icon-facebook','social-icon')
+                            +socials('#','icon-twitter','social-icon')
+                            +socials('#','icon-gplus','social-icon')
+            .btn
+                a(href='#').btn__more Show All
+    section.testimonials
+        .container
+            h2.title.testimonials__title WHAT OUR CLIENTS SAY
+            .testimonials__slider
+                .testimonials__slide
+                    .photo
+                        img.photo__img(src='img/client-photo.png' alt='photo')
+                    p.comment Praesent tincidunt molestie libero mollis porta. Faucibus leo, ac aliquet magna. Vivamus ullamcorper mollis leo, at sagittis mi pellentesque quis. Praesent nec elit tristique.
+                    h3.name Larry Jane
+                    h4.profesion General Manager
+                .testimonials__slide
+                    .photo
+                        img.photo__img(src='img/client-photo.png' alt='photo')
+                    p.comment Praesent tincidunt molestie libero mollis porta. Faucibus leo, ac aliquet magna. Vivamus ullamcorper mollis leo, at sagittis mi pellentesque quis. Praesent nec elit tristique.
+                    h3.name Larry Jane
+                    h4.profesion General Manager
