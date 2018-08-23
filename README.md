@@ -6,8 +6,8 @@
   2. SASS preprocessor
   3. JS(jQuery)
 
-## Bundling
+## Building
 
-  Building system: gulp
-  start to building command: gulp
-  If you run the project for the first time, run command: npm install
+  1. Building system: gulp
+  2. Start to building command: gulp
+  3. If you run the project for the first time, run command: npm install
